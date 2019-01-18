@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-sunflower-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcSunflowerHarvestLoss",
+      "componentPath": "components/agc-sunflower-harvest-loss/agc-sunflower-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sunflower-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcSunflowerHarvestLossInputs",
+      "componentPath": "components/agc-sunflower-harvest-loss-inputs/agc-sunflower-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sunflower-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcSunflowerHarvestLossProgress",
+      "componentPath": "components/agc-sunflower-harvest-loss-progress/agc-sunflower-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sunflower-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcSunflowerHarvestLossResults",
+      "componentPath": "components/agc-sunflower-harvest-loss-results/agc-sunflower-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-sunflower-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcSunflowerHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-sunflower-harvest-loss-results-placeholder/agc-sunflower-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

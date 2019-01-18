@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Sunflower Harvest Loss</title>
+  <link rel="stylesheet" href="/build/agc-sunflower-harvest-loss.css" type="text/css" />
+  <script src="/build/agc-sunflower-harvest-loss.js"></script>
+  <style>
+    h1 {
+      padding: 0 0 10px 0;
+      border-bottom: 2px solid #dcdcdc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sunflower Harvest Loss</h1>
+  <agc-sunflower-harvest-loss socket="example" mode="full">
+      <div slot="results">
+      <agc-sunflower-harvest-loss-results socket="example">
+        <div slot="empty">
+          <agc-sunflower-harvest-loss-results-placeholder></agc-sunflower-harvest-loss-results-placeholder>
+        </div>
+      </agc-sunflower-harvest-loss-results>
+      <agc-sunflower-harvest-loss-inputs socket="example"></agc-sunflower-harvest-loss-inputs>
+    </div>
+  </agc-sunflower-harvest-loss>
+
+</body>
+</html>
